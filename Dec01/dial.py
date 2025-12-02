@@ -10,7 +10,7 @@ import re
 def zeroes (lines):
     pos = 50
     count = 0
-    turn = re.compile(r'^([LR])([0-9]+)$')
+    turn = re.compile(r'^([LR])([0-9])$')
 
     for i, line in enumerate(lines, start=1):
         line = line.strip()

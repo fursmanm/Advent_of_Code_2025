@@ -10,7 +10,7 @@ import re
 def zeroes (lines):
     pos = 50
     count = 0
-    turn = re.compile(r'^([LR])([0-9]+)$')
+    turn = re.compile(r'^([LR])([0-9])$')
 
     for i, line in enumerate(lines, start=1):
         line = line.strip()
@@ -35,7 +35,7 @@ def zeroes (lines):
 
     return count
 
-with open(r"C:\Users\Fursman\Desktop\dial.txt", "r") as f:
+with open(r"C:\Users\...\dial.txt", "r") as f:
     lines = f.readlines()
 
 print(zeroes(lines))
